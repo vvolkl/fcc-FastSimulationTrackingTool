@@ -43,9 +43,9 @@ void ZHmmBckCut(Int_t nev  = 100, TString fname = "ZHmm.root", Int_t ndeb = 1)
 	Double_t Bfield = 2.0;			// Set B field in Tesla
 // Initialize tracking resolution
 	SolGridCov *GCid = new SolGridCov();
-	GCid->Read("CovIDEA-BASE.root");			// Read in covariance array
+	GCid->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovIDEA-BASE.root");			// Read in covariance array
 	SolGridCov *GCcl = new SolGridCov();
-	GCcl->Read("CovCLD.root");			// Read in covariance array
+	GCcl->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovCLD.root");			// Read in covariance array
 // Histograms
    TH1D* etaMu  = new TH1D("etaMu",  "Pseudorapidity",                             120,  -3.,   3.);
    TH1D* ptMu   = new TH1D("ptMu",   "pt",                                         100,   0., 100.);

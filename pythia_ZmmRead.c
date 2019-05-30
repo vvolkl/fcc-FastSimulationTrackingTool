@@ -33,7 +33,7 @@ void ZmmRead(Int_t nev  = 100, TString fname = "PyOut.root", Int_t ndeb = 1)
 	Double_t Bfield = G->B();		// Get B field in Tesla
 // Initialize tracking resolution
 	SolGridCov *GC = new SolGridCov();
-	GC->Read("Cov.root");			// Read in covariance array
+	GC->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovIDEA-BASE.root");			// Read in covariance array
 // Histograms
    TH1F* etaMu = new TH1F("etaMu", "Pseudorapidity", 120, -3., 3.);
    TH1F* ptMu  = new TH1F("ptMu",  "pt",             100,   0., 50.);

@@ -139,8 +139,7 @@ void testCLD(Double_t Ang)
 	//
 	// Compare with IDEA
 	SolGridCov *GC = new SolGridCov();
-	//GC->Read("CovIDEA-BASE.root");
-	GC->Read("CovIDEA-BASE.root");
+	GC->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovIDEA-BASE.root");
 	//
 	Double_t *spt1 = new Double_t[Npt];
 	Double_t *sd01 = new Double_t[Npt];
@@ -266,7 +265,7 @@ void testCLD(Double_t Ang)
 	//Double_t pts = (ptmax - ptmin) / (Double_t)(Npt - 1);
 	//
 	SolGridCov *GC = new SolGridCov();
-	GC->Read("CovIDEA-BASE.root");
+	GC->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovIDEA-BASE.root");
 	for (Int_t k = 0; k < Npt; k++)	// Loop on pt
 	{
 		Double_t x[3]; Double_t p[3];

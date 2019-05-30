@@ -52,7 +52,7 @@ void test(Double_t ptr, Double_t angr)
 	// Test interpolation over the grid
 	//
 	SolGridCov *GC = new SolGridCov();
-	GC->Read("CovIDEA-BASE.root");
+	GC->Read("root://eospublic.cern.ch//eos/experiment/fcc/ee/datasets/fasttrackingtool/CovIDEA-BASE.root");
 	//
 	// Compare to direct calculation
 	//
